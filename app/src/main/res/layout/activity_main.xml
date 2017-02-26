@@ -18,10 +18,10 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@id/bt_jobseek"
-    android:textColor="@color/textColorPrimary"
+    android:textColor="@color/whitetextColor"
     android:layout_marginTop="125dp"
     android:layout_below="@+id/button2"
-    android:background="#455a64"
+    android:background="@color/btn_background_color"
     android:layout_alignParentStart="true" />
 
 <Button
@@ -30,8 +30,8 @@ android:orientation="vertical">
     android:layout_height="wrap_content"
     android:id="@+id/bt_emp"
     android:layout_marginTop="30dp"
-    android:textColor="@color/textColorPrimary"
-    android:background="#455a64"
+    android:textColor="@color/whitetextColor"
+    android:background="@color/btn_background_color"
     android:layout_below="@+id/linearLayout"
     android:layout_alignParentStart="true"/>
 

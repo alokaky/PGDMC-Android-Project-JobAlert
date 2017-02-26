@@ -16,51 +16,56 @@ android:orientation="vertical">
     android:layout_height="wrap_content"
     android:text="JOBSEEKER REGISTRATION"
     android:textAlignment="center"
-    android:textSize="20sp"
-    android:textColor="#000000" />
+    android:textSize="@dimen/header_txt_size"
+    android:textColor="@color/black"
+    android:id="@+id/tv_header_seeker_reg"/>
 
 
 <EditText
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="25dp"
-    android:hint="Enter Name"
-    android:id="@+id/editTextName" />
-
-
+    android:hint="First Name"
+    android:id="@+id/et_seeker_fname" />
 
 <EditText
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
-    android:hint="Choose Username"
-    android:id="@+id/editTextUserName" />
+    android:hint="Last Name"
+    android:id="@+id/et_seeker_lname" />
 
+<EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textEmailSubject"
+    android:hint="Enter username"
+    android:layout_marginTop="10dp"
+    android:id="@+id/et_seeker_username" />
 
+<EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Enter Password"
+        android:layout_marginTop="10dp"
+        android:id="@+id/et_seeker_password" />
 
 <EditText
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:inputType="textPassword"
-    android:hint="Choose Password"
     android:layout_marginTop="10dp"
-    android:id="@+id/editTextPassword" />
-
-
-<EditText
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:inputType="textEmailAddress"
-    android:layout_marginTop="10dp"
-    android:hint="Enter E-mail"
-    android:id="@+id/editTextEmail" />
+    android:hint="Confirm Password"
+    android:id="@+id/et_seeker_confirm_password" />
 
 <Button
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:text="Register"
-    android:background="#455a64"
-    android:textColor="@color/textColorPrimary"
+    android:background="@color/btn_background_color"
+    android:textColor="@color/whitetextColor"
     android:layout_marginTop="30dp"
-    android:id="@+id/buttonRegister" />
+    android:id="@+id/btn_seek_register" />
+
 </LinearLayout>

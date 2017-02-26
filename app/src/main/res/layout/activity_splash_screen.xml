@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical">
-
-<ImageButton
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:src="@drawable/splash_img"
-
     android:background="@color/colorPrimaryDark"
-    />
+    android:orientation="vertical"
+    tools:context="com.example.babu.jobsandesh.SplashScreen"
+    android:id="@+id/splash">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash_img"
+        tools:ignore="ContentDescription" />
 </LinearLayout>
 

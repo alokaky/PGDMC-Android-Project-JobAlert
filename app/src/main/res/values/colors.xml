@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#009688</color>
+
     <color name="colorPrimaryDark">#00796b</color>
-    <color name="textColorPrimary">#ffffff</color>
+
     <color name="windowBackground">#FFFFFF</color>
+
     <color name="navigationBarColor">#000000</color>
+
+    <color name="black">#000000</color>
+
     <color name="colorAccent">#c8e8ff</color>
+
+    <color name="whitetextColor">#ffffff</color>
+    <color name="btn_background_color">#455a64</color>
+
+    <color name="google_btn_bgcolor">#b7171c</color>
 </resources>

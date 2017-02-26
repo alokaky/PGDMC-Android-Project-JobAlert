@@ -1,4 +1,4 @@
-package com.example.babu.jobsandesh.tabfragment;
+package com.example.babu.jobsandesh.jstabfragment;
 
 
 import android.os.Bundle;

@@ -16,7 +16,7 @@
             android:title="Notification"/>
         <item
             android:id="@+id/nav_SavedJobs"
-            android:icon="@drawable/ic_notifications_black_24dp"
+            android:icon="@drawable/ic_folder_black_24dp"
             android:title="Saved Jobs" />
 
     </group>

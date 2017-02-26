@@ -2,6 +2,7 @@ package com.example.babu.jobsandesh;
 
 import org.junit.Test;
 
+import static junit.framework.Assert.assertEquals;
 import static org.junit.Assert.*;
 
 /**
@@ -12,6 +13,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
+
         assertEquals(4, 2 + 2);
     }
 }

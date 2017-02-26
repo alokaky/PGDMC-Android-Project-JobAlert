@@ -1,4 +1,4 @@
-package com.example.babu.jobsandesh.tabfragment;
+package com.example.babu.jobsandesh.jstabfragment;
 
 
 import android.os.Bundle;
@@ -27,13 +27,9 @@ public class HomeFragment extends Fragment {
             R.drawable.tab_tracking_white_48,
             R.drawable.tab_rateinfo_white_48,
     };*/
-
-
     public HomeFragment() {
         // Required empty public constructor
     }
-
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -73,30 +69,24 @@ public class HomeFragment extends Fragment {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new file_Fragment();
+                    return new File_Fragment();
                 case 1:
-                    return new offCampus_Fragment();
-                case 2:
                     return new WalkinFragment();
-
+                case 2:
+                    return new OffCampus_Fragment();
             }
             return null;
         }
 
         @Override
         public int getCount() {
-
+            /**
+             * This method returns the title of the tab according to the position.
+             */
             return int_items;
-
         }
-
-        /**
-         * This method returns the title of the tab according to the position.
-         */
-
         @Override
         public CharSequence getPageTitle(int position) {
-
             switch (position) {
                 case 0:
                     return " FILES ";
@@ -104,7 +94,6 @@ public class HomeFragment extends Fragment {
                     return " WALKIN ";
                 case 2:
                     return " OFFCAMPUS";
-
             }
             return null;
         }

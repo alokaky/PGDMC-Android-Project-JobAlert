@@ -1,4 +1,4 @@
-package com.example.babu.jobsandesh.tabfragment;
+package com.example.babu.jobsandesh.employer;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.example.babu.jobsandesh.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class file_Fragment extends Fragment {
+public class Emp_Setting_fragment extends Fragment {
 
 
-    public file_Fragment() {
+    public Emp_Setting_fragment() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class file_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_file_, container, false);
+        return inflater.inflate(R.layout.fragment_emp__setting_fragment, container, false);
     }
 
 }

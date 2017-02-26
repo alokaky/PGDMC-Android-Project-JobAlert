@@ -11,17 +11,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.babu.jobsandesh.R;
-import com.example.babu.jobsandesh.tabfragment.HomeFragment;
+import com.example.babu.jobsandesh.jstabfragment.HomeFragment;
 
-public class JobseekNavActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class JobseekNavActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+    TextView username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +49,12 @@ public class JobseekNavActivity extends AppCompatActivity
         mDrawerLayout.setDrawerListener(toggle);
         toggle.syncState();
 
-        mNavigationView = (NavigationView) findViewById(R.id.nav_view);
+        mNavigationView = (NavigationView)findViewById(R.id.nav_view);
+
+        View header=mNavigationView.getHeaderView(0);
+        username=(TextView)header.findViewById(R.id.tv_username);
+        username.setText(getIntent().getStringExtra("fname")+" "+getIntent().getStringExtra("lname"));
+
         mNavigationView.setNavigationItemSelectedListener(this);
     }
 

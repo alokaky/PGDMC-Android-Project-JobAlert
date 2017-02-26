@@ -22,19 +22,19 @@ android:orientation="vertical">
     <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:inputType="numberPassword"
+    android:inputType="textEmailSubject"
     android:layout_marginTop="20dp"
-    android:id="@+id/etemp_username"
-    android:hint="username"/>
+    android:hint="Username"
+    android:id="@+id/et_log_emp_username" />
 
 
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
-    android:id="@+id/etemp_pass"
+    android:inputType="textPassword"
     android:hint="Password"
-    />
+    android:id="@+id/et_log_emp_password"/>
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -46,31 +46,27 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:text="Login"
         android:layout_marginTop="20dp"
-        android:onClick="insert"
-        android:textColor="@color/textColorPrimary"
-        android:background="#455a64"
-        android:id="@+id/btemp_login" />
+        android:textColor="@color/whitetextColor"
+        android:background="@color/btn_background_color"
+        android:id="@+id/btn_emp_login" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:textColor="@color/textColorPrimary"
-        android:onClick="insert"
-
+        android:textColor="@color/whitetextColor"
         android:layout_marginTop="20dp"
-        android:background="#455a64"
-        android:id="@+id/btemp_register" />
+        android:background="@color/btn_background_color"
+        android:id="@+id/btn_to_register_activity" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login Using G+ google"
-        android:textColor="@color/textColorPrimary"
-        android:onClick="insert"
-        android:id="@+id/btemp_gmail"
-        android:background="#b7171c"
-        android:layout_marginTop="20dp"/>
+        android:textColor="@color/whitetextColor"
+        android:background="@color/google_btn_bgcolor"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_emp_gmail"/>
 </LinearLayout>
 
 </LinearLayout>
