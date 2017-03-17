@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.example.babu.jobsandesh.R;
 
-import static com.example.babu.jobsandesh.jstabfragment.OffCampus_Fragment.arrayList;
+import static com.example.babu.jobsandesh.jstabfragment.AllPost_Fragment.arrayList;
 
 /**
  * Created by Alok on 25/Jan/17.

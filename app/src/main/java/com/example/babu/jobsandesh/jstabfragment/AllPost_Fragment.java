@@ -13,7 +13,7 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class OffCampus_Fragment extends Fragment {
+public class AllPost_Fragment extends Fragment {
 
     public RecyclerView recyclerView_offcampus;
 
@@ -21,7 +21,7 @@ public class OffCampus_Fragment extends Fragment {
 
     static ArrayList<JobseekerOffCampus_Cards> arrayList = new ArrayList<>();
 
-    public OffCampus_Fragment()
+    public AllPost_Fragment()
     {
 
     }
@@ -36,8 +36,6 @@ public class OffCampus_Fragment extends Fragment {
         recyclerView_offcampus = (RecyclerView)view.findViewById(R.id.jobcontainer);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView_offcampus.setLayoutManager(layoutManager);
-
-
 
         customAdapter_offcampus = new CustomAdapter_offcampus(getContext());
         recyclerView_offcampus.setAdapter(customAdapter_offcampus);

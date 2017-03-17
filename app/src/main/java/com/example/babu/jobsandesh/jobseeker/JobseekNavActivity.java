@@ -40,13 +40,13 @@ public class JobseekNavActivity extends AppCompatActivity implements NavigationV
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.containerView,new HomeFragment()).commit();
+        mFragmentTransaction.add(R.id.containerView,new HomeFragment()).commit();
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        mDrawerLayout.setDrawerListener(toggle);
+        mDrawerLayout.addDrawerListener(toggle);//getDrawerElevation();//computeScroll();//addDrawerListener(toggle);//setDrawerListener(toggle);
         toggle.syncState();
 
         mNavigationView = (NavigationView)findViewById(R.id.nav_view);
@@ -99,7 +99,7 @@ public class JobseekNavActivity extends AppCompatActivity implements NavigationV
 
         if (id == R.id.nav_Home) {
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.containerView,new HomeFragment()).commit();
+            fragmentTransaction.    replace(R.id.containerView,new HomeFragment()).commit();
             // Handle the camera action
         } else if (id == R.id.nav_Notifiaction) {
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();

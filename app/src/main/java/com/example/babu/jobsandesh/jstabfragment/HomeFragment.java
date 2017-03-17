@@ -69,11 +69,11 @@ public class HomeFragment extends Fragment {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new File_Fragment();
+                    return new AllPost_Fragment();
                 case 1:
-                    return new WalkinFragment();
+                    return new SavedPostFragment();
                 case 2:
-                    return new OffCampus_Fragment();
+                    return new File_Fragment();
             }
             return null;
         }
@@ -89,11 +89,11 @@ public class HomeFragment extends Fragment {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return " FILES ";
+                    return " ALL ";
                 case 1:
-                    return " WALKIN ";
+                    return " SAVED ";
                 case 2:
-                    return " OFFCAMPUS";
+                    return "FILE";
             }
             return null;
         }

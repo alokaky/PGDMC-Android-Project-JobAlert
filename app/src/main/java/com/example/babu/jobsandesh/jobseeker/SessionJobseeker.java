@@ -1,33 +1,28 @@
 package com.example.babu.jobsandesh.jobseeker;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.graphics.Shader;
-import android.preference.PreferenceManager;
-import android.util.Log;
-
-import java.util.Set;
 
 /**
  * Created by Alok on 28/Jan/17.
  */
 
 public class SessionJobseeker {
-    private SharedPreferences prefs;
+    //URL to our login.php file
+    public static final String LOGIN_URL = "http://192.168.94.1/Android/LoginLogout/login.php";
 
-    public SessionJobseeker(Context cntx)
-    {
-        prefs = PreferenceManager.getDefaultSharedPreferences(cntx);
-    }
+    //Keys for email and password as defined in our $_POST['key'] in login.php
+    public static final String KEY_EMAIL = "email";
+    public static final String KEY_PASSWORD = "password";
 
-    public void setSess(int s)
-    {
-        prefs.edit().putInt("ses",s).commit();
+    //If server response is equal to this that means login is successful
+    public static final String LOGIN_SUCCESS = "success";
 
-    }
-   public  int getSesss(){
-       int onoff=prefs.getInt("ses",0);
-       Log.d("GETSession->>>", String.valueOf(onoff));
-       return onoff;
-   }
+    //Keys for Sharedpreferences
+    //This would be the name of our shared preferences
+    public static final String SHARED_PREF_NAME = "myloginapp";
+
+    //This would be used to store the email of current logged in user
+    public static final String EMAIL_SHARED_PREF = "email";
+
+    //We will use this to store the boolean in sharedpreference to track user is loggedin or not
+    public static final String LOGGEDIN_SHARED_PREF = "loggedin";
 }

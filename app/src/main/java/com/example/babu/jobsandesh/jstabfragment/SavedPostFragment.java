@@ -12,10 +12,10 @@ import com.example.babu.jobsandesh.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WalkinFragment extends Fragment {
+public class SavedPostFragment extends Fragment {
 
 
-    public WalkinFragment() {
+    public SavedPostFragment() {
         // Required empty public constructor
     }
 

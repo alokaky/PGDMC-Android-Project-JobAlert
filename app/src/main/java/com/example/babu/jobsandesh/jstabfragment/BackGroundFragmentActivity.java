@@ -15,7 +15,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import static com.example.babu.jobsandesh.jstabfragment.OffCampus_Fragment.arrayList;
+import static com.example.babu.jobsandesh.jstabfragment.AllPost_Fragment.arrayList;
 
 /**
  * Created by Alok on 26/Jan/17.
@@ -31,7 +31,7 @@ public class BackGroundFragmentActivity extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String register_url = "http://192.168.42.222/job_alert_app/jobseeker/job_list.php";
+        String register_url = "https://www-jobalert-com.000webhostapp.com/job_alert_app/jobseeker/job_list.php";
         try {
             URL url = new URL(register_url);
 

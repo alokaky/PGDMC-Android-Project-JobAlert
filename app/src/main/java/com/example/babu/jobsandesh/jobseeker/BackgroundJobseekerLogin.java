@@ -44,7 +44,8 @@ public class BackgroundJobseekerLogin extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String register_url = "http://192.168.42.222/job_alert_app/jobseeker/login_seeker.php";
+       // String register_url = "http://192.168.42.222/job_alert_app/jobseeker/login_seeker.php";
+        String login_url="https://www-jobalert-com.000webhostapp.com/job_alert_app/jobseeker/login_seeker.php";
         String result = "";
         String str_seeker_username = params[0],
                 str_seeker_password = params[1];
@@ -57,11 +58,12 @@ public class BackgroundJobseekerLogin extends AsyncTask<String,Void,String> {
 
         RequestBody body = builder.build();
 
-        Request request = new Request.Builder().url(register_url).post(body).build();
+        Request request = new Request.Builder().url(login_url).post(body).build();
 
         try {
             Response response = client.newCall(request).execute();
             result = response.body().string();
+            Log.d("RESULT->>>",result);
             return result;
         } catch (IOException e) {
             e.printStackTrace();
@@ -138,7 +140,7 @@ public class BackgroundJobseekerLogin extends AsyncTask<String,Void,String> {
                     fname = r.getString("js_firstname");
                     lname = r.getString("js_lastname");
                 } catch (JSONException e) {
-                    e.printStackTrace();
+                    Toast.makeText(context, result, Toast.LENGTH_LONG).show();
                 }
 
                 Intent in = new Intent(context, JobseekNavActivity.class);
