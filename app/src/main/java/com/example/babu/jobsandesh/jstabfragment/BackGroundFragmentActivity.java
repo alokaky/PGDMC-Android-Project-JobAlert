@@ -81,7 +81,6 @@ public class BackGroundFragmentActivity extends AsyncTask<String,Void,String> {
                         emp = r.getString("emp");
                         compname = r.getString("compname");
                         post = r.getString("post");
-
                         arrayList.add(new JobseekerOffCampus_Cards(emp, compname, post));
                     }
                 }

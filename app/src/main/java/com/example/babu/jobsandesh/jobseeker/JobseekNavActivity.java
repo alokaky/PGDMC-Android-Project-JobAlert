@@ -19,7 +19,6 @@ import com.example.babu.jobsandesh.jstabfragment.HomeFragment;
 
 public class JobseekNavActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
@@ -42,7 +41,7 @@ public class JobseekNavActivity extends AppCompatActivity implements NavigationV
         mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.add(R.id.containerView,new HomeFragment()).commit();
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, mDrawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -119,7 +118,8 @@ public class JobseekNavActivity extends AppCompatActivity implements NavigationV
 //        }
         }
 
-            mDrawerLayout.closeDrawer(GravityCompat.START);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
             return true;
         }
     }

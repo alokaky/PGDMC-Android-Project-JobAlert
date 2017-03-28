@@ -38,6 +38,7 @@ public class BackgroundJobseekerLogin extends AsyncTask<String,Void,String> {
     Context context;
     AlertDialog alertDialog;
 
+
     public BackgroundJobseekerLogin(Context ctx) {
         context = ctx;
     }
@@ -122,6 +123,7 @@ public class BackgroundJobseekerLogin extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         String fname = null, lname = null;
 
+
         Log.d("result", result);
 
         if (result.equals("Invalid Email or Password")) {
@@ -149,6 +151,7 @@ public class BackgroundJobseekerLogin extends AsyncTask<String,Void,String> {
                     in.putExtra("fname", fname);
                     in.putExtra("lname", lname);
                     new BackGroundFragmentActivity(context).execute();
+
                     context.startActivity(in);
                 }
             }
